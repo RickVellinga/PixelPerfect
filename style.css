@@ -138,7 +138,30 @@ html, body, #myVerticalCarousel {
       75% {opacity: 1;}
       100% {opacity:0;}
       }
+
+      @keyframes flits1 {
+        0% {opacity:0;}
+        50% {opacity: 1;}
+        75% {opacity: 0.5;}
+        100% {opacity:0;}
+        }
+     
+        @keyframes flits2 {
+          0% {opacity:0;}
+          50% {opacity: 1;}
+          75% {opacity: 0.5;}
+          100% {opacity:0;}
+          }
          
+      @keyframes flits3 {
+        0% {opacity:0;}
+        25%{opacity: 0.5;}
+        50% {opacity: 1;}
+        75% {opacity: 0.5;}
+        100% {opacity:0;}
+        }
+         
+    
 
 .slide2__logo{
   display: block;
@@ -166,7 +189,7 @@ html, body, #myVerticalCarousel {
   width: 5%;
   position: relative;
   z-index: 10;
-
+  animation: flits1 ease 2s infinite;
 
 }
 
@@ -176,6 +199,8 @@ html, body, #myVerticalCarousel {
   margin-bottom: -0.4em;
   padding-left: 8.6em;
   width: 3.5%;
+  animation: flits2 ease 1s infinite;
+
 }
 
 .etoile3{
@@ -184,14 +209,16 @@ html, body, #myVerticalCarousel {
   margin-bottom: -10.4em;
   margin-left: -15.6em;
   width: 3.5%;
+  animation: flits3 ease 3s infinite;
+
 }
 
 .vuur{
   z-index: 1;
   position: absolute;
   width: 15%;
-  margin-top: 6em;
-  margin-left: 40em;
+  margin-top: 6.3em;
+  margin-left: 40.3em;
 }
 
 .vogel{
@@ -254,3 +281,122 @@ html, body, #myVerticalCarousel {
   margin-top: 42em;
   color: #8B4513;
 }
+
+.slide4__logo{
+  display: block;
+  margin-left: 31.5vw;
+  z-index: 5;
+  position: absolute;
+  padding-top: 10em;
+  width: 35%;
+}
+
+.witproject4{
+  text-align: center;
+  padding-top: 4.2em;
+  font-family: fontBold;
+  color: white;
+  font-size: 30px;
+}
+
+.geelproject4{
+  text-align: center;
+  margin-top: -1.5em;
+  font-family: fontNormaal;
+  color: #8B4513;
+  font-size: 13px;
+
+}
+
+.slide6__logo{
+  display: block;
+  margin-left: 36.5vw;
+  z-index: 5;
+  position: absolute;
+  padding-top: 8em;
+  width: 30%;
+}
+
+.slide6__logo1{
+  display: block;
+  margin-left: 43.9vw;
+  z-index: 5;
+  position: absolute;
+  padding-top: 7.3em;
+  width: 8%;
+}
+
+.witproject6{
+  text-align: center;
+  position: relative;
+  padding-top: 13.3em;
+  font-family: fontBold;
+  color: #e27023;
+  font-size: 30px;
+}
+
+.geelproject6{
+  text-align: center;
+  margin-top: -1.5em;
+  font-family: fontNormaal;
+  color:#e27023;
+  font-size: 13px;
+  animation: duim ease 2s ;
+
+}
+
+.ding1{
+  padding-left: 33.2em;
+  padding-top: 16.5em;
+  width: 14%;
+  position: relative;
+  z-index: 10;
+  animation: online ease 4s ;
+}
+
+.niks1, .niks2, .niks3{
+  opacity: 0;
+}
+
+.ding2{
+  z-index: 10;
+  position: relative;
+  margin-bottom: 3.9em;
+  width: 3.5%;
+  margin-left: -11.4em;
+  animation:  pijl ease 1s infinite;
+  opacity: 0;
+  animation-delay: 3s;
+}
+
+.ding3{
+  z-index: 10;
+  position: relative;
+  margin-bottom: 1em;
+  margin-left: 9.8em;
+  width: 3.5%;
+  animation: duim ease 2s ;
+}
+
+@keyframes online {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  @keyframes duim {
+    0% {opacity:0;}
+    25% {opacity:0;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+    }
+   
+@keyframes pijl {
+  0% {opacity:0;}
+  20% {opacity:1;}
+  40% {opacity:0;}
+  60% {opacity:1;}
+  80% {opacity:0;}
+  100% {opacity:1;}
+  }
